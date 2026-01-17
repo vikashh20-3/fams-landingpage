@@ -97,7 +97,7 @@ const capabilities = [
   {
     icon: "🔗",
     title: "CREAS Nexus",
-    description: "Climate Resilience Early Action for Sustainability with Physical & Transition Climate Risk Indicators and Vulnerability Mapping.",
+    description: "Climate Resilient Early Adaption for Sustainability",
     features: ["Climate Risk", "Vulnerability Mapping", "Resilience"],
     gradient: "from-purple-500 to-pink-500",
   },
