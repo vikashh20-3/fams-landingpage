@@ -17,7 +17,7 @@ const portals = [
     url: "https://creas-nexus.famsds.com",
     subdomain: "creas-nexus.famsds.com",
     image: "/images/creas-nexus.png",
-    description: "Climate Resilience Early Action for Sustainability - Climate Hazards (Acute & Chronic), Physical & Transition Climate Risk Indicators, High-resolution Vulnerability Mapping, and Parametric Risk Scores.",
+    description: "Climate Resilient Early Adaption for Sustainability - Climate Hazards (Acute & Chronic), Physical & Transition Climate Risk Indicators, High-resolution Vulnerability Mapping, and Parametric Risk Scores.",
     features: ["Climate Risk Indicators", "Vulnerability Mapping", "Resilience Measures"],
   },
   {
