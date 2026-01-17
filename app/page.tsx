@@ -6,59 +6,75 @@ import BackToTop from "./components/BackToTop";
 const portals = [
   {
     title: "Data Intelligence",
-    url: "https://konkan.famsds.com/dashboard",
-    subdomain: "konkan.famsds.com",
+    url: "https://intelligence.famsds.com",
+    subdomain: "intelligence.famsds.com",
     image: "/images/data-intelligence.png",
-    description: "Comprehensive data analytics platform providing real-time insights, predictive modeling, and actionable intelligence for water and climate data management.",
-    features: ["Real-time Analytics", "Predictive Models", "Data Visualization"],
+    description: "Geospatial Data (GIS & Remote Sensing), Historical Data (Satellite Imagery & Time Series), Real-Time Data (IoT Sensors & SCADA), Forecast Data with ETL Data Pipeline integrated Data Warehouse.",
+    features: ["Geospatial & Remote Sensing", "Real-Time IoT & SCADA", "ETL Data Pipeline"],
   },
   {
     title: "CREAS Nexus Intelligence",
     url: "https://creas-nexus.famsds.com",
     subdomain: "creas-nexus.famsds.com",
     image: "/images/creas-nexus.png",
-    description: "Interconnected systems intelligence hub connecting water, climate, agriculture, and energy data streams for holistic decision-making.",
-    features: ["Cross-sector Analysis", "System Integration", "Nexus Modeling"],
+    description: "Climate Resilience Early Action for Sustainability - Climate Hazards (Acute & Chronic), Physical & Transition Climate Risk Indicators, High-resolution Vulnerability Mapping, and Parametric Risk Scores.",
+    features: ["Climate Risk Indicators", "Vulnerability Mapping", "Resilience Measures"],
+  },
+  {
+    title: "Spatial Intelligence",
+    url: "https://spatial.famsds.com",
+    subdomain: "spatial.famsds.com",
+    image: "/images/spatial-intelligence.png",
+    description: "Transforming Satellite Data into Actionable Insights - Automated Data Extraction, Advanced Visualization with Conversational Interface, Deep Learning Tools for Object Detection & Segmentation.",
+    features: ["Satellite Analysis", "Deep Learning", "Automated Extraction"],
   },
   {
     title: "Flood Intelligence",
     url: "https://flood.famsds.com",
     subdomain: "flood.famsds.com",
     image: "/images/flood-intelligence.png",
-    description: "Advanced flood monitoring and early warning system with real-time alerts, risk mapping, and evacuation planning tools.",
-    features: ["Early Warning System", "Risk Mapping", "Real-time Monitoring"],
+    description: "Weather Forecast Integrated with Models, Nowcast, Inflow & Flood Forecast, Probabilistic Scenario Analysis, Flood Inundation Mapping with Advanced 3D Visualization Decision Support System.",
+    features: ["Flood Forecasting", "Inundation Mapping", "3D Visualization"],
   },
   {
     title: "Water Utility Intelligence",
     url: "https://waterutility.famsds.com",
     subdomain: "waterutility.famsds.com",
     image: "/images/water-utility.png",
-    description: "Smart water utility management platform for optimizing distribution networks, reducing losses, and ensuring supply reliability.",
-    features: ["Network Optimization", "Loss Reduction", "Demand Forecasting"],
+    description: "Water Supply, Storm Water, Waste Water - Centralized Asset Management, GIS Mapping, Digital Twins for Demand Forecasting, Asset Failure Predictions, and Risk-Based Capital Planning.",
+    features: ["Digital Twins", "Asset Management", "Risk Planning"],
   },
   {
-    title: "ACT Water Intelligence",
+    title: "ACT: Water Balance",
     url: "https://act-water.famsds.com",
     subdomain: "act-water.famsds.com",
     image: "/images/act-water.png",
-    description: "Specialized water governance and compliance platform for regulatory monitoring, policy analysis, and sustainable water management.",
-    features: ["Compliance Tracking", "Policy Analysis", "Governance Tools"],
+    description: "Water Budgeting (Village/Tehsil/District), Hydrological Water Balance Analysis, Reservoir Monitoring, River Linking Systems Planning, and Water Supply Network Optimization.",
+    features: ["Water Budgeting", "Reservoir Monitoring", "Supply Optimization"],
   },
   {
     title: "Agriculture Market Intelligence",
     url: "https://ami.famsds.com",
     subdomain: "ami.famsds.com",
     image: "/images/agri-market.png",
-    description: "Comprehensive agricultural market analytics providing crop yield predictions, price forecasting, and supply chain insights.",
-    features: ["Yield Predictions", "Price Forecasting", "Market Trends"],
+    description: "Crop Area & Yield Estimation, Crop Health Monitoring, Evapotranspiration, Water Stress & Soil Moisture Prediction, Climate Resilient Crop Selection, and Supply Value Chain Optimization.",
+    features: ["Crop Monitoring", "Yield Estimation", "Supply Chain"],
   },
   {
     title: "Energy Intelligence",
     url: "https://energy.famsds.com",
     subdomain: "energy.famsds.com",
     image: "/images/energy.png",
-    description: "Renewable energy optimization platform for power grid management, solar/wind forecasting, and energy efficiency analytics.",
-    features: ["Grid Management", "Renewable Forecasting", "Efficiency Analytics"],
+    description: "Energy Resource Optimization - Pumped Storage Projects, Solar Radiation Analysis, Wind Resource Assessment, Hydropower Inflow Forecast, Biomass, Geothermal, and Ocean Coastal Energy Assessment.",
+    features: ["Solar & Wind", "Hydropower", "Resource Optimization"],
+  },
+  {
+    title: "HydroTech Lab",
+    url: "https://hydrotech.famsds.com",
+    subdomain: "hydrotech.famsds.com",
+    image: "/images/hydrotech-lab.png",
+    description: "Advanced hydrological research and development laboratory for innovative water technology solutions and experimental modeling systems.",
+    features: ["R&D Lab", "Water Tech", "Coming Soon"],
   },
   {
     title: "FAMS Academy",
@@ -66,65 +82,79 @@ const portals = [
     subdomain: "academy.famsds.com",
     image: "/images/fams-academy.png",
     description: "E-learning platform offering courses, certifications, and training programs on water, climate, agriculture, and energy systems.",
-    features: ["Online Courses", "Certifications", "Expert Training"],
+    features: ["Online Courses", "Certifications", "Coming Soon"],
   },
 ];
 
 const capabilities = [
   {
-    icon: "�",
+    icon: "📊",
     title: "Data Intelligence",
-    description: "Comprehensive data analytics platform providing real-time insights, predictive modeling, and actionable intelligence.",
-    features: ["Real-time Analytics", "Predictive Models", "Data Visualization"],
+    description: "Geospatial Data, Real-Time IoT Sensors & SCADA, Forecast Data with ETL Data Pipeline integrated Data Warehouse.",
+    features: ["Geospatial & GIS", "Real-Time IoT", "ETL Pipeline"],
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: "🔗",
     title: "CREAS Nexus",
-    description: "Interconnected systems hub connecting water, climate, agriculture, and energy data streams for holistic insights.",
-    features: ["Cross-sector Analysis", "System Integration", "Nexus Modeling"],
+    description: "Climate Resilience Early Action for Sustainability with Physical & Transition Climate Risk Indicators and Vulnerability Mapping.",
+    features: ["Climate Risk", "Vulnerability Mapping", "Resilience"],
     gradient: "from-purple-500 to-pink-500",
   },
   {
-    icon: "�",
+    icon: "🛰️",
+    title: "Spatial Intelligence",
+    description: "Transforming Satellite Data into Actionable Insights with Deep Learning Tools for Object Detection & Segmentation.",
+    features: ["Satellite Analysis", "Deep Learning", "Automation"],
+    gradient: "from-violet-500 to-indigo-500",
+  },
+  {
+    icon: "🌊",
     title: "Flood Intelligence",
-    description: "Advanced flood monitoring and early warning system with real-time alerts and risk mapping.",
-    features: ["Early Warning", "Risk Mapping", "Real-time Alerts"],
+    description: "Weather Forecast with Inflow & Flood Forecast, Probabilistic Scenario Analysis, and 3D Visualization Decision Support.",
+    features: ["Flood Forecast", "Inundation Mapping", "3D Visualization"],
     gradient: "from-cyan-500 to-blue-600",
   },
   {
     icon: "💧",
     title: "Water Utility",
-    description: "Smart water utility management for optimizing distribution networks and reducing losses.",
-    features: ["Network Optimization", "Loss Reduction", "Demand Forecasting"],
+    description: "Centralized Asset Management, Digital Twins for Demand Forecasting, Asset Failure Predictions, and Risk-Based Planning.",
+    features: ["Digital Twins", "Asset Management", "Risk Planning"],
     gradient: "from-teal-500 to-emerald-500",
   },
   {
     icon: "🏛️",
-    title: "ACT Water",
-    description: "Water governance and compliance platform for regulatory monitoring and policy analysis.",
-    features: ["Compliance Tracking", "Policy Analysis", "Governance Tools"],
+    title: "ACT: Water Balance",
+    description: "Water Budgeting, Hydrological Water Balance Analysis, Reservoir Monitoring, and Water Supply Network Optimization.",
+    features: ["Water Budgeting", "Reservoir Monitoring", "Optimization"],
     gradient: "from-indigo-500 to-purple-500",
   },
   {
     icon: "🌾",
     title: "Agriculture Market",
-    description: "Agricultural market analytics with crop yield predictions, price forecasting, and supply chain insights.",
-    features: ["Yield Predictions", "Price Forecasting", "Market Trends"],
+    description: "Crop Area & Yield Estimation, Health Monitoring, Climate Resilient Crop Selection, and Supply Value Chain Optimization.",
+    features: ["Crop Monitoring", "Yield Estimation", "Supply Chain"],
     gradient: "from-green-500 to-lime-500",
   },
   {
     icon: "⚡",
     title: "Energy Intelligence",
-    description: "Renewable energy optimization for power grid management and energy efficiency analytics.",
-    features: ["Grid Management", "Renewable Forecasting", "Efficiency Analytics"],
+    description: "Energy Resource Optimization for Solar, Wind, Hydropower, Biomass, Geothermal, and Ocean Coastal Energy Assessment.",
+    features: ["Solar & Wind", "Hydropower", "Resource Optimization"],
     gradient: "from-amber-500 to-orange-500",
+  },
+  {
+    icon: "🔬",
+    title: "HydroTech Lab",
+    description: "Advanced hydrological research and development laboratory for innovative water technology solutions.",
+    features: ["R&D Lab", "Water Tech", "Coming Soon"],
+    gradient: "from-sky-500 to-blue-500",
   },
   {
     icon: "🎓",
     title: "FAMS Academy",
     description: "E-learning platform with courses, certifications, and training on water, climate, agriculture, and energy.",
-    features: ["Online Courses", "Certifications", "Expert Training"],
+    features: ["Online Courses", "Certifications", "Coming Soon"],
     gradient: "from-rose-500 to-red-500",
   },
 ];
@@ -199,7 +229,7 @@ export default function Home() {
           {/* Floating Stat Cards */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-8 sm:mb-12 animate-fade-in-up delay-300">
             {[
-              { value: "8+", label: "Intelligence Portals", sublabel: "Specialized Platforms" },
+              { value: "10+", label: "Intelligence Solutions", sublabel: "Specialized Platforms" },
               { value: "24/7", label: "Real-time Monitoring", sublabel: "Continuous Updates" },
               { value: "100+", label: "Data Sources", sublabel: "Integrated Systems" },
               { value: "Global", label: "Coverage", sublabel: "Worldwide Reach" },
@@ -224,7 +254,7 @@ export default function Home() {
               </svg>
             </a>
             <a href="#portals" className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-white/10 text-white rounded-full border border-white/30 hover:bg-white/20 transition-all backdrop-blur-sm">
-              Intelligence Portals
+              Intelligence Solutions
             </a>
           </div>
         </div>
@@ -245,7 +275,7 @@ export default function Home() {
               Our Intelligence Suite
             </span>
             <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
-              Specialized Portals
+              Specialized Solutions
             </h2>
             <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
               Explore our comprehensive suite of intelligence platforms designed for water, climate, agriculture, and energy sectors.
@@ -296,7 +326,7 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
             {[
-              { value: "8+", label: "Intelligence Portals", icon: "🌐" },
+              { value: "10+", label: "Intelligence Solutions", icon: "🌐" },
               { value: "500K+", label: "Data Points Daily", icon: "📊" },
               { value: "4", label: "Core Sectors", icon: "🎯" },
               { value: "24/7", label: "Active Monitoring", icon: "⚡" },
@@ -307,6 +337,115 @@ export default function Home() {
                 <div className="text-white/70 text-sm uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Solutions Section */}
+      <main id="portals" className="flex-grow bg-gradient-to-b from-[var(--background)] to-[var(--secondary)] py-24 sm:py-32">
+        <div className="container mx-auto px-6">
+          <div className="mb-16 text-center section-divider pb-8">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
+              Our Ecosystem
+            </span>
+            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
+              Intelligence Solutions
+            </h2>
+            <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
+              Access our suite of specialized platforms designed for data-driven decision making across water, climate, agriculture, and energy sectors.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {portals.map((portal, index) => (
+              <div
+                key={portal.subdomain}
+                className="animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <PortalCard
+                  title={portal.title}
+                  url={portal.url}
+                  subdomain={portal.subdomain}
+                  image={portal.image}
+                  description={portal.description}
+                  features={portal.features}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+
+      {/* Live Showcase Section with Iframe */}
+      <section id="showcase" className="bg-[var(--secondary)] py-24 sm:py-32">
+        <div className="container mx-auto px-6">
+          <div className="mb-16 text-center">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
+              Live Preview
+            </span>
+            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
+              Experience Our Solutions
+            </h2>
+            <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
+              Get a live preview of our intelligence platforms. Click any portal below to see it in action.
+            </p>
+          </div>
+
+          <PortalShowcase portals={portals} />
+        </div>
+      </section>
+
+      {/* Data Sources & Compliance */}
+      <section className="bg-[var(--secondary)] py-24 sm:py-32">
+        <div className="container mx-auto px-6">
+          <div className="mb-16 text-center">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
+              Trust & Transparency
+            </span>
+            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl mb-4">
+              Data Sources & Compliance
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Data Sources */}
+            <div>
+              <h3 className="text-xl font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                </svg>
+                Trusted Data Sources
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                {dataSources.map((source, idx) => (
+                  <div key={idx} className="bg-white rounded-xl p-4 shadow-sm border border-[var(--border)] hover:shadow-md transition-all">
+                    <div className="font-semibold text-[var(--foreground)] mb-1">{source.name}</div>
+                    <div className="text-xs text-[var(--muted-foreground)]">{source.description}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Compliance */}
+            <div>
+              <h3 className="text-xl font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Compliance & Certifications
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                {complianceBadges.map((badge, idx) => (
+                  <div key={idx} className={`bg-gradient-to-r ${badge.color} rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform`}>
+                    <div className="font-bold">{badge.name}</div>
+                    <div className="text-xs text-white/70">Certified</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -378,114 +517,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Data Sources & Compliance */}
-      <section className="bg-[var(--secondary)] py-24 sm:py-32">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 text-center">
-            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
-              Trust & Transparency
-            </span>
-            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl mb-4">
-              Data Sources & Compliance
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Data Sources */}
-            <div>
-              <h3 className="text-xl font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
-                </svg>
-                Trusted Data Sources
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {dataSources.map((source, idx) => (
-                  <div key={idx} className="bg-white rounded-xl p-4 shadow-sm border border-[var(--border)] hover:shadow-md transition-all">
-                    <div className="font-semibold text-[var(--foreground)] mb-1">{source.name}</div>
-                    <div className="text-xs text-[var(--muted-foreground)]">{source.description}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Compliance */}
-            <div>
-              <h3 className="text-xl font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                Compliance & Certifications
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {complianceBadges.map((badge, idx) => (
-                  <div key={idx} className={`bg-gradient-to-r ${badge.color} rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform`}>
-                    <div className="font-bold">{badge.name}</div>
-                    <div className="text-xs text-white/70">Certified</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portals Section */}
-      <main id="portals" className="flex-grow bg-gradient-to-b from-[var(--background)] to-[var(--secondary)] py-24 sm:py-32">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 text-center section-divider pb-8">
-            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
-              Our Ecosystem
-            </span>
-            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
-              Intelligence Portals
-            </h2>
-            <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
-              Access our suite of specialized platforms designed for data-driven decision making across water, climate, agriculture, and energy sectors.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {portals.map((portal, index) => (
-              <div
-                key={portal.subdomain}
-                className="animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <PortalCard
-                  title={portal.title}
-                  url={portal.url}
-                  subdomain={portal.subdomain}
-                  image={portal.image}
-                  description={portal.description}
-                  features={portal.features}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </main>
-
-      {/* Live Showcase Section with Iframe */}
-      <section id="showcase" className="bg-[var(--secondary)] py-24 sm:py-32">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 text-center">
-            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
-              Live Preview
-            </span>
-            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
-              Experience Our Portals
-            </h2>
-            <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
-              Get a live preview of our intelligence platforms. Click any portal below to see it in action.
-            </p>
-          </div>
-
-          <PortalShowcase portals={portals} />
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative bg-[var(--primary)] py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0 hero-pattern opacity-50"></div>
@@ -528,7 +559,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-4 text-white/80">Portals</h4>
+              <h4 className="font-bold mb-4 text-white/80">Solutions</h4>
               <ul className="space-y-2">
                 {portals.slice(0, 4).map((portal) => (
                   <li key={portal.subdomain}>

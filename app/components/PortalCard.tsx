@@ -52,7 +52,7 @@ export default function PortalCard({ title, url, subdomain, image, description, 
           </h3>
         </div>
 
-        <p className="text-sm text-[var(--muted-foreground)] leading-relaxed line-clamp-2">
+        <p className="text-sm text-[var(--foreground)]/80 leading-relaxed">
           {description}
         </p>
 
