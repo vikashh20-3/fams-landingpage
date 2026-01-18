@@ -2,6 +2,7 @@ import PortalCard from "./components/PortalCard";
 import PortalShowcase from "./components/PortalShowcase";
 import Navigation from "./components/Navigation";
 import BackToTop from "./components/BackToTop";
+import { features } from "process";
 
 const portals = [
   {
@@ -84,6 +85,14 @@ const portals = [
     description: "E-learning platform offering courses, certifications, and training programs on water, climate, agriculture, and energy systems.",
     features: ["Online Courses", "Certifications", "Coming Soon"],
   },
+  {
+    title:"Dam Safety",
+    url:"https:://damsafety.famsds.com",
+    subdomain:"damsafety.famsds.com",
+    image:"/images/dam-safety.png",
+    description:"Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools to ensure the integrity and safety of dam infrastructure.",
+    features:["Real-Time Monitoring","Structural Health","Risk Assessment"],
+  }
 ];
 
 const capabilities = [
