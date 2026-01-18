@@ -166,6 +166,13 @@ const capabilities = [
     features: ["Online Courses", "Certifications", "Coming Soon"],
     gradient: "from-rose-500 to-red-500",
   },
+  {
+    title:"Dam Safety",
+    icon:"🏞️",
+    description:"Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools.",
+    features:["Real-Time Monitoring","Structural Health","Risk Assessment"],
+    gradient: "from-gray-500 to-zinc-500",
+  }
 ];
 
 const dataSources = [
