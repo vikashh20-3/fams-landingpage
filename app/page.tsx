@@ -16,7 +16,7 @@ const portals = [
   {
     title: "Data Intelligence",
     url: "https://data.famsds.com",
-    subdomain: "intelligence.famsds.com",
+    subdomain: "data.famsds.com",
     image: "/images/data-intelligence.png",
     description: "Geospatial Data (GIS & Remote Sensing), Historical Data (Satellite Imagery & Time Series), Real-Time Data (IoT Sensors & SCADA), Forecast Data with ETL Data Pipeline integrated Data Warehouse.",
     features: ["Geospatial & Remote Sensing", "Real-Time IoT & SCADA", "ETL Data Pipeline"],
