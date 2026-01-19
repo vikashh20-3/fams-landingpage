@@ -409,6 +409,135 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Emerging Technologies Section */}
+      <section className="relative bg-gradient-to-b from-[var(--background)] to-[var(--secondary)] py-24 sm:py-32 overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 right-0 w-96 h-96 bg-[var(--primary)]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Section Header */}
+          <div className="mb-16 text-center">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[var(--primary)] bg-[var(--primary)]/10 rounded-full uppercase">
+              Advanced Technologies
+            </span>
+            <h2 className="text-4xl font-black tracking-tight text-[var(--primary)] sm:text-5xl md:text-6xl mb-4">
+              We also offer service in
+            </h2>
+            <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
+              Leveraging cutting-edge technologies to deliver comprehensive solutions for water, climate, agriculture, and energy security.
+            </p>
+          </div>
+
+          {/* Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
+            {/* Left Column - Technology Overview */}
+            <div className="animate-fade-in-up">
+              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-[var(--border)] overflow-hidden">
+                {/* Orange accent bar */}
+                <div className="absolute left-0 top-8 bottom-8 w-1.5 bg-gradient-to-b from-orange-400 via-orange-500 to-orange-600 rounded-r-full"></div>
+
+                <div className="pl-6">
+                  <h3 className="text-2xl md:text-3xl font-black text-[var(--primary)] mb-2 leading-tight">
+                    Leveraging Emerging<br />Technologies
+                  </h3>
+                  <h4 className="text-xl md:text-2xl font-bold text-orange-500 mb-8">
+                    in Water-Climate-<br />Agriculture-Energy Security
+                  </h4>
+
+                  <ul className="space-y-4">
+                    {[
+                      { icon: "🛰️", text: "GIS and Remote Sensing" },
+                      { icon: "📊", text: "Big Data: IoT & Digital Twin" },
+                      { icon: "⚙️", text: "Physics based Models" },
+                      { icon: "🔗", text: "Hybrid Models (Physics + AI-ML)" },
+                      { icon: "🤖", text: "AI-ML Algorithms: Predictive Analytics" },
+                      { icon: "🔐", text: "Blockchain" },
+                    ].map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center gap-4 text-[var(--foreground)] group animate-fade-in-up"
+                        style={{ animationDelay: `${idx * 100}ms` }}
+                      >
+                        <span className="w-10 h-10 flex items-center justify-center bg-[var(--primary)]/10 rounded-xl text-lg group-hover:bg-[var(--primary)]/20 group-hover:scale-110 transition-all">
+                          {item.icon}
+                        </span>
+                        <span className="text-base md:text-lg font-medium">{item.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Service Cards */}
+            <div className="flex flex-col gap-4">
+              {[
+                {
+                  icon: "🤖",
+                  title: "Artificial Intelligence (AI) & Machine Learning (ML)",
+                  description: "Predictive analytics for inflow and flood modelling. Demand-supply optimization for water allocation.",
+                  gradient: "from-red-500 to-orange-500",
+                  textColor: "text-white",
+                },
+                {
+                  icon: "📱",
+                  title: "Internet of Things (IoT) & Smart Sensors",
+                  description: "Real-time monitoring of rainfall, weather, discharge, water levels, and leak detection.",
+                  gradient: "from-blue-500 to-blue-600",
+                  textColor: "text-white",
+                },
+                {
+                  icon: "🛰️",
+                  title: "Remote Sensing & GIS",
+                  description: "Satellite-based Spatio-Temporal Data Management.",
+                  gradient: "from-yellow-400 to-amber-500",
+                  textColor: "text-gray-900",
+                },
+                {
+                  icon: "🏗️",
+                  title: "Digital Twins for Water Infrastructure",
+                  description: "Real-time simulation and optimization of dams, reservoirs, and pipelines.",
+                  gradient: "from-green-500 to-emerald-600",
+                  textColor: "text-white",
+                },
+                {
+                  icon: "💧",
+                  title: "Blockchain for Water Governance",
+                  description: "Transparent water rights and resource allocation.",
+                  gradient: "from-teal-500 to-cyan-600",
+                  textColor: "text-white",
+                },
+              ].map((service, idx) => (
+                <div
+                  key={idx}
+                  className={`group relative bg-gradient-to-r ${service.gradient} rounded-2xl p-5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.02] animate-fade-in-up overflow-hidden`}
+                  style={{ animationDelay: `${idx * 150}ms` }}
+                >
+                  {/* Shimmer effect on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+
+                  <div className="relative z-10 flex items-start gap-4">
+                    <div className={`w-12 h-12 flex items-center justify-center ${service.textColor === 'text-white' ? 'bg-white/20' : 'bg-black/10'} rounded-xl text-2xl flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                      {service.icon}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className={`font-bold text-base md:text-lg ${service.textColor} mb-1 leading-tight`}>
+                        {service.title}
+                      </h4>
+                      <p className={`text-sm ${service.textColor === 'text-white' ? 'text-white/80' : 'text-gray-700'} leading-relaxed`}>
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Data Sources & Compliance */}
       <section className="bg-[var(--secondary)] py-24 sm:py-32">
         <div className="container mx-auto px-6">
