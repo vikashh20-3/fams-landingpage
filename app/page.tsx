@@ -564,10 +564,10 @@ export default function Home() {
                 Empowering organizations with next-generation climate risk intelligence for water, climate, agriculture, and energy security.
               </p>
               {/* Recognition Badges */}
-              <div className="flex flex-wrap gap-2">
+              {/* <div className="flex flex-wrap gap-2">
                 <span className="text-xs bg-white/10 px-3 py-1 rounded-full text-white/70">🏆 Climate Fintech Leader 2025</span>
                 <span className="text-xs bg-white/10 px-3 py-1 rounded-full text-white/70">⭐ Best Risk Analytics</span>
-              </div>
+              </div> */}
             </div>
             <div>
               <h4 className="font-bold mb-4 text-white/80">Solutions</h4>
