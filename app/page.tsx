@@ -6,20 +6,20 @@ import { features } from "process";
 
 const portals = [
   {
-    title: "Data Intelligence",
-    url: "https://intelligence.famsds.com",
-    subdomain: "intelligence.famsds.com",
-    image: "/images/data-intelligence.png",
-    description: "Geospatial Data (GIS & Remote Sensing), Historical Data (Satellite Imagery & Time Series), Real-Time Data (IoT Sensors & SCADA), Forecast Data with ETL Data Pipeline integrated Data Warehouse.",
-    features: ["Geospatial & Remote Sensing", "Real-Time IoT & SCADA", "ETL Data Pipeline"],
-  },
-  {
     title: "CREAS Nexus Intelligence",
     url: "https://creas-nexus.famsds.com",
     subdomain: "creas-nexus.famsds.com",
     image: "/images/creas-nexus.png",
     description: "Climate Resilient Early Adaption for Sustainability - Climate Hazards (Acute & Chronic), Physical & Transition Climate Risk Indicators, High-resolution Vulnerability Mapping, and Parametric Risk Scores.",
     features: ["Climate Risk Indicators", "Vulnerability Mapping", "Resilience Measures"],
+  },
+  {
+    title: "Data Intelligence",
+    url: "https://data.famsds.com",
+    subdomain: "intelligence.famsds.com",
+    image: "/images/data-intelligence.png",
+    description: "Geospatial Data (GIS & Remote Sensing), Historical Data (Satellite Imagery & Time Series), Real-Time Data (IoT Sensors & SCADA), Forecast Data with ETL Data Pipeline integrated Data Warehouse.",
+    features: ["Geospatial & Remote Sensing", "Real-Time IoT & SCADA", "ETL Data Pipeline"],
   },
   {
     title: "Spatial Intelligence",
@@ -31,7 +31,7 @@ const portals = [
   },
   {
     title: "Flood Intelligence",
-    url: "https://flood.famsds.com",
+    url: "https://ews.famsds.com",
     subdomain: "flood.famsds.com",
     image: "/images/flood-intelligence.png",
     description: "Weather Forecast Integrated with Models, Nowcast, Inflow & Flood Forecast, Probabilistic Scenario Analysis, Flood Inundation Mapping with Advanced 3D Visualization Decision Support System.",
@@ -52,6 +52,14 @@ const portals = [
     image: "/images/act-water.png",
     description: "Water Budgeting (Village/Tehsil/District), Hydrological Water Balance Analysis, Reservoir Monitoring, River Linking Systems Planning, and Water Supply Network Optimization.",
     features: ["Water Budgeting", "Reservoir Monitoring", "Supply Optimization"],
+  },
+  {
+    title: "Dam Safety",
+    url: "https:://damsafety.famsds.com",
+    subdomain: "damsafety.famsds.com",
+    image: "/images/dam-safety.png",
+    description: "Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools to ensure the integrity and safety of dam infrastructure.",
+    features: ["Real-Time Monitoring", "Structural Health", "Risk Assessment"],
   },
   {
     title: "Agriculture Market Intelligence",
@@ -84,14 +92,6 @@ const portals = [
     image: "/images/fams-academy.png",
     description: "E-learning platform offering courses, certifications, and training programs on water, climate, agriculture, and energy systems.",
     features: ["Online Courses", "Certifications", "Coming Soon"],
-  },
-  {
-    title:"Dam Safety",
-    url:"https:://damsafety.famsds.com",
-    subdomain:"damsafety.famsds.com",
-    image:"/images/dam-safety.png",
-    description:"Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools to ensure the integrity and safety of dam infrastructure.",
-    features:["Real-Time Monitoring","Structural Health","Risk Assessment"],
   }
 ];
 
@@ -167,10 +167,10 @@ const capabilities = [
     gradient: "from-rose-500 to-red-500",
   },
   {
-    title:"Dam Safety",
-    icon:"🏞️",
-    description:"Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools.",
-    features:["Real-Time Monitoring","Structural Health","Risk Assessment"],
+    title: "Dam Safety",
+    icon: "🏞️",
+    description: "Comprehensive dam safety monitoring and management platform integrating real-time data, structural health analysis, and risk assessment tools.",
+    features: ["Real-Time Monitoring", "Structural Health", "Risk Assessment"],
     gradient: "from-gray-500 to-zinc-500",
   }
 ];
@@ -179,7 +179,7 @@ const dataSources = [
   { name: "Satellite Imagery", description: "High-resolution earth observation" },
   { name: "IoT Sensor Networks", description: "Real-time ground monitoring" },
   { name: "Government Databases", description: "Official meteorological data" },
-  { name: "Research Institutions", description: "Scientific research data" },
+  { name: "Research Institutions", description: "Scientific research data" }
 ];
 
 const complianceBadges = [
@@ -192,13 +192,8 @@ const complianceBadges = [
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col font-sans">
-      {/* Navigation */}
       <Navigation />
-
-      {/* Back to Top Button */}
       <BackToTop />
-
-      {/* Hero Section - Full Viewport */}
       <header
         className="relative min-h-screen w-full overflow-hidden text-white flex items-center justify-center hero-pattern pt-20 md:pt-0"
         style={{
